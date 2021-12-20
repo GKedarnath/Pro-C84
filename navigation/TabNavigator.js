@@ -2,7 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import Feed from "../screens/FeedScreen";
+import FeedScreen from "../screens/FeedScreen";
 import CreatePost from "../screens/CreatePostScreen";
 
 const Tab = createMaterialBottomTabNavigator();
@@ -13,7 +13,7 @@ const BottomTabNavigator = ()=>{
             screenOptions = {({ route }) => ({
                 tabBarIcon: ({ focused, color, size }) => {
                     let iconName;
-                    if(route.name === 'Feed'){
+                    if(route.name === 'FeedScreen'){
                         iconName = focused
                         ? 'book'
                         : 'book-outline';
@@ -33,7 +33,7 @@ const BottomTabNavigator = ()=>{
                 }}
         
         >
-            <Tab.Screen name = "Feed" component = {Feed}/>
+            <Tab.Screen name = "FeedScreen" component = {FeedScreen}/>
             <Tab.Screen name = "CreatePost" component = {CreatePost}/>
 
         </Tab.Navigator>

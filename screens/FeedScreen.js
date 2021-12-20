@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { FlatList, Platform, StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 
-export default class CreateStory extends Component {
+export default class FeedScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
